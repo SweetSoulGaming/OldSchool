@@ -134,7 +134,7 @@ function moveEverything() {
 
 function drawNet() {
 	for(var i=0;i<canvas.height; i+=40) {
-		colorRect(canvas.width/2-1,i,2,20,'blue');
+		colorRect(canvas.width/2-1,i,2,20,'purple');
 	}
 }
 
@@ -163,12 +163,12 @@ function drawEverything() {
 	drawNet();
 
 	// left player paddle
-	colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
+	colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'orange');
         //AI Paddle
-	colorRect(canvas.width-PADDLE_THICKNESS,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
+	colorRect(canvas.width-PADDLE_THICKNESS,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'orange');
        
 	// draws the ball
-	colorCircle(ballX, ballY, 10, 'blue');
+	colorCircle(ballX, ballY, 10, 'purple');
 	
 	canvasContext.fillText(player1Score, 100, 100);
 	canvasContext.fillText(player2Score,canvas.width-100, 100);
